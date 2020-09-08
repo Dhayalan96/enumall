@@ -1,6 +1,27 @@
-Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.:
+Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, netcraft, hackertarget, threatminer, threatcrowd, mx_spf_ip and bruteforces to find subdomains. Plus resolves to IP.:
  
 Usage:
+install required recon-ng modules
+
+```bash
+ Recon
+  -----
+    recon/domains-hosts/bing_domain_web
+    recon/domains-hosts/brute_hosts
+    recon/domains-hosts/certificate_transparency
+    recon/domains-hosts/findsubdomains
+    recon/domains-hosts/google_site_web
+    recon/domains-hosts/hackertarget
+    recon/domains-hosts/mx_spf_ip
+    recon/domains-hosts/netcraft
+    recon/domains-hosts/ssl_san
+    recon/domains-hosts/threatcrowd
+    recon/domains-hosts/threatminer
+
+  Reporting
+  ---------
+    reporting/html
+```
 
 './enumall.sh google.com'
 
